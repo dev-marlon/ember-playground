@@ -1,10 +1,13 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div class="container">
+  <div class="jumbotron">
+    <h2 id="title">Ember playground</h2>
+  </div>
 
-<ul>
-  <li>{{#link-to 'index'}}Home{{/link-to}}</li>
-  <li>{{#link-to 'blog'}}Blog{{/link-to}}</li>
-  <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
-  <li>{{#link-to 'imprint'}}Imprint{{/link-to}}</li>    
-</ul>
-
-{{outlet}}
+  <ul>
+    <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+    <li>{{#link-to 'blog'}}Blog{{/link-to}}</li>
+    <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+    <li>{{#link-to 'imprint'}}Imprint{{/link-to}}</li>
+  </ul>
+  {{outlet}}
+</div>
