@@ -1,13 +1,25 @@
-<div class="container">
-  <div class="jumbotron">
-    <h2 id="title">Ember playground</h2>
-  </div>
 
-  <ul>
-    <li>{{#link-to 'index'}}Home{{/link-to}}</li>
-    <li>{{#link-to 'blog'}}Blog{{/link-to}}</li>
-    <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
-    <li>{{#link-to 'imprint'}}Imprint{{/link-to}}</li>
-  </ul>
-  {{outlet}}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="jumbotron">
+                <h2 id="title">Ember playground</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active">{{#link-to 'index'}}Home{{/link-to}}</li>
+                <li role="presentation">{{#link-to 'posts'}}Posts{{/link-to}}</li>
+                <li role="presentation">{{#link-to 'contact'}}Contact{{/link-to}}</li>
+                <li role="presentation">{{#link-to 'imprint'}}Imprint{{/link-to}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            {{outlet}}
+        </div>
+    </div>
 </div>

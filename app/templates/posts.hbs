@@ -1,0 +1,15 @@
+<h2>Der Blog</h2>
+
+{{outlet}}
+
+{{#bs-button type="primary" action="reverse"}}
+    Reverse Posts
+{{/bs-button}}
+
+{{#each post in model}}
+    <h3>{{post.title}}</h3>
+    {{#link-to 'post' post.uid}}weiterlesen{{/link-to}}
+    <hr />
+{{/each}}
+
+
