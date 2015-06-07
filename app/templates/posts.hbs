@@ -2,13 +2,13 @@
 
 {{outlet}}
 
-{{#bs-button type="primary" action="reverse"}}
-    Reverse Posts
+{{#bs-button type="primary" action="addPost"}}
+    Add post
 {{/bs-button}}
 
 {{#each post in model}}
     <h3>{{post.title}}</h3>
-    {{#link-to 'post' post.uid}}weiterlesen{{/link-to}}
+    {{#link-to 'post' post}}weiterlesen{{/link-to}}
     <hr />
 {{/each}}
 
