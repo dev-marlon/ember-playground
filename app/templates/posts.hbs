@@ -2,14 +2,16 @@
 
 {{outlet}}
 
+<br />
+
 {{#bs-button type="primary" action="addPost"}}
     Add post
 {{/bs-button}}
 
 {{#each post in model}}
-    <h3>{{post.title}}</h3>
-    {{#link-to 'post' post}}weiterlesen{{/link-to}}
-    <hr />
+    {{#post-item post=post}}
+        <hr />
+    {{/post-item}}
 {{/each}}
 
 
